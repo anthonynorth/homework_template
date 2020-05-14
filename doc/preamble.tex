@@ -1,0 +1,70 @@
+% layout
+\usepackage[a4paper, margin=25mm, top=30mm, bottom=20mm, headheight=15pt]{geometry}
+\setlength\parindent{0em}
+\setlength{\parskip}{1ex}
+\linespread{1.1}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\usepackage[shortlabels, inline]{enumitem}
+\usepackage{hyperref}
+
+\makeatletter
+\newcommand{\currentfontsize}{\fontsize{\f@size}{\f@baselineskip}\selectfont}
+\makeatother
+
+% code highlight
+\usepackage{minted, polyglossia}
+\setmonofont{inconsolata}[Scale=MatchLowercase]
+\setmintedinline{fontsize=\currentfontsize}
+\setminted{autogobble=true, breaklines=true, frame=lines, fontsize=\footnotesize}
+
+% math
+\usepackage{mathtools, amsthm, amssymb, lualatex-math}
+\usepackage[warnings-off={mathtools-overbracket, mathtools-colon}]{unicode-math}
+
+% figures
+\usepackage{graphicx, svg, float}
+\svgsetup{inkscapelatex=false, width=0.8\textwidth}
+\setkeys{Gin}{width=0.8\textwidth}
+\floatplacement{figure}{H}
+\floatplacement{table}{H}
+\floatplacement{listing}{H}
+
+% tables
+\usepackage{booktabs}
+
+% sections
+\setcounter{secnumdepth}{0}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% document properties
+\AtBeginDocument{
+    \hypersetup{
+        pdftitle={\homeworktitle},
+        pdfsubject={\subject},
+        pdfauthor={\studentname}
+    }
+}
+
+% title page
+\AtBeginDocument{
+    \title{
+        \vfill
+        \textmd{\textbf{\subject:\ \homeworktitle}}\\
+        \normalsize\vspace{6pt}\small{Due: \duedate}\\
+        \vspace{6pt}\large{\textit{\tutor:\ \class}}
+        \vfill
+    }
+    \author{
+        \LARGE{\studentname}\\
+        \Large{\studentnumber}
+    }
+    \date{}
+}
+
+% header-footer
+\lhead{\studentname}
+\chead{\subject: \homeworktitle}
+\rhead{\rightmark}

@@ -133,6 +133,9 @@ acs-*.bib
 # hyperref
 *.brf
 
+# inkscape
+*-inkscape
+
 # knitr
 *-concordance.tex
 # TODO Comment the next line if you want to keep your tikz graphics files
@@ -274,3 +277,6 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+
+# built pdf
+doc/*.pdf
