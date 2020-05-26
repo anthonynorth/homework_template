@@ -33,11 +33,14 @@
 \floatplacement{listing}{H}
 
 % tables
-\usepackage{booktabs}
+\usepackage{booktabs, longtable}
 
 % sections
 \setcounter{secnumdepth}{0}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
+
+% footnotes
+\usepackage[bottom]{footmisc}
 
 % document properties
 \AtBeginDocument{
