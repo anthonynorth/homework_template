@@ -4,11 +4,13 @@
 \setlength{\parskip}{1ex}
 \linespread{1.1}
 
+\usepackage{hyperref}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 
+% lists
 \usepackage[shortlabels, inline]{enumitem}
-\usepackage{hyperref}
+\setlist{nosep, itemsep=1ex, topsep=0.5ex}
 
 \makeatletter
 \newcommand{\currentfontsize}{\fontsize{\f@size}{\f@baselineskip}\selectfont}
