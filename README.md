@@ -13,13 +13,18 @@ It is **highly recommended** you install [TinyTex](https://yihui.name/tinytex/) 
 After installing TinyTex, execute this command in R:
 
 ```
-tinytex::tlmgr_install(c('adjustbox','amscls','catchfile','collectbox','enumitem','environ','eurosym','fancyhdr','filehook','footmisc','fvextra','ifplatform','jknapltx','lineno','lm-math','makecmds','mathtools','minted','parskip','pdflscape','pgf','polyglossia','rsfs','tcolorbox','tex','titling','transparent','trimspaces','ucs','ulem','unicode-math','upquote','xcolor','xstring'))
+tinytex::tlmgr_install(c('adjustbox','amscls','catchfile','collectbox','enumitem','environ','eurosym',
+  'fancyhdr','filehook','footmisc','fvextra','ifplatform','jknapltx','lineno','lm-math','makecmds',
+  'mathtools','minted','parskip','pdflscape','pgf','polyglossia','rsfs','tcolorbox','tex','titling',
+   'transparent','trimspaces','ucs','ulem','unicode-math','upquote','xcolor','xstring'))
 ```
 
 Or if you prefer installing using 'tlmgr':
 
 ```
-tlmgr install adjustbox amscls catchfile collectbox enumitem environ eurosym fancyhdr filehook footmisc fvextra ifplatform jknapltx lineno lm-math makecmds mathtools minted parskip pdflscape pgf polyglossia rsfs tcolorbox tex titling transparent trimspaces ucs ulem unicode-math upquote xcolor xstring
+tlmgr install adjustbox amscls catchfile collectbox enumitem environ eurosym fancyhdr filehook 
+  footmisc fvextra ifplatform jknapltx lineno lm-math makecmds mathtools minted parskip pdflscape pgf 
+  polyglossia rsfs tcolorbox tex titling transparent trimspaces ucs ulem unicode-math upquote xcolor xstring
 ```
 
 
