@@ -10,11 +10,18 @@ It is **highly recommended** you install [TinyTex](https://yihui.name/tinytex/) 
 
 - Option 1: Install packages using 'tlmgr'
 
-After installing TinyTex execute this command:
+After installing TinyTex, execute this command in R:
 
-```{R}
-tinytex::tlmgr_install(c('catchfile','enumitem','fancyhdr','filehook','fvextra','ifplatform','lineno','lm-math','makecmds','minted','polyglossia','tex','unicode-math','xcolor','xstring','tcolorbox','pgf','environ','parskip','adjustbox','collectbox','eurosym','ucs','titling','ulem','jknapltx','rsfs','pdflscape','upquote','amscls','mathtools','trimspaces','transparent','footmisc'))
 ```
+tinytex::tlmgr_install(c('adjustbox','amscls','catchfile','collectbox','enumitem','environ','eurosym','fancyhdr','filehook','footmisc','fvextra','ifplatform','jknapltx','lineno','lm-math','makecmds','mathtools','minted','parskip','pdflscape','pgf','polyglossia','rsfs','tcolorbox','tex','titling','transparent','trimspaces','ucs','ulem','unicode-math','upquote','xcolor','xstring'))
+```
+
+Or if you prefer installing using 'tlmgr':
+
+```
+tlmgr install adjustbox amscls catchfile collectbox enumitem environ eurosym fancyhdr filehook footmisc fvextra ifplatform jknapltx lineno lm-math makecmds mathtools minted parskip pdflscape pgf polyglossia rsfs tcolorbox tex titling transparent trimspaces ucs ulem unicode-math upquote xcolor xstring
+```
+
 
 - Option 2: Let TinyTex do the work!
 
